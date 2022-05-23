@@ -1,5 +1,9 @@
 <template>
-    <h1>{{ title }}</h1>
+    <div>
+        <router-link :to="{ name: 'home'}">Home</router-link>
+        <router-view></router-view>
+    </div>
+
 </template>
 
 <script>
@@ -7,7 +11,7 @@
         name: "Welcome",
         data(){
             return{
-                title:'prova'
+
             }
         }
     }
